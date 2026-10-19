@@ -1,0 +1,48 @@
+looming:
+  # Explicit body IDs take precedence. Populate these after inspecting MaleCNS.
+  body_ids: []
+  type_patterns: ["LPLC2", "LC4", "LC6", "LC16"]
+  max_neurons: 256
+  current_gain: 0.25
+  baseline_current: 0.052
+
+# These groups are real MaleCNS sensory neurons selected from release
+# annotations. Keys 1-6 in the interactive UI stimulate them directly; the
+# stimulus still has to traverse the connectome before it can affect the body.
+manual_stimuli:
+  eye_left:
+    where:
+      superclass: [ol_sensory]
+      instance_regex: "_L$"
+    max_neurons: 512
+    current: 0.35
+  eye_right:
+    where:
+      superclass: [ol_sensory]
+      instance_regex: "_R$"
+    max_neurons: 512
+    current: 0.35
+  leg_front:
+    where:
+      class_regex: "mechanosensory"
+      entryNerve: [ProLN, ProCN, DProN, VProN, ProAN, PrN]
+    max_neurons: 512
+    current: 0.35
+  leg_middle:
+    where:
+      class_regex: "mechanosensory"
+      entryNerve: [MesoLN]
+    max_neurons: 512
+    current: 0.35
+  leg_hind:
+    where:
+      class_regex: "mechanosensory"
+      entryNerve: [MetaLN, DMetaN]
+    max_neurons: 512
+    current: 0.35
+  touch_head:
+    where:
+      class_regex: "mechanosensory"
+      entryNerve: [AN, ON]
+    max_neurons: 512
+    current: 0.35

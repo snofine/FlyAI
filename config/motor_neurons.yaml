@@ -1,0 +1,20 @@
+escape:
+  body_ids: []
+  type_patterns: ["DNp01", "Giant Fiber", '\bGF\b']
+  max_neurons: 128
+forward:
+  body_ids: []
+  type_patterns: ["DNa", "DNp", "DNb"]
+  max_neurons: 512
+turn_left:
+  body_ids: []
+  type_patterns: ["DN.*_L", "descending.*left"]
+  max_neurons: 256
+turn_right:
+  body_ids: []
+  type_patterns: ["DN.*_R", "descending.*right"]
+  max_neurons: 256
+stop:
+  body_ids: []
+  type_patterns: []
+  max_neurons: 128

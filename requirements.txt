@@ -1,0 +1,7 @@
+numpy>=2.0
+pandas>=2.2
+pyarrow>=17
+PyYAML>=6.0
+pygame-ce>=2.5
+pytest>=8.0
+

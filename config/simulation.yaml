@@ -1,0 +1,29 @@
+simulation:
+  dt_ms: 1.0
+  speed: 1.0
+  seed: 42
+  neural_steps_per_frame: 4
+neuron:
+  tau_ms: 20.0
+  threshold: 1.0
+  reset: 0.0
+  refractory_ms: 2.0
+connectome:
+  minimum_weight: 1
+  normalization: log1p
+  weight_scale: 0.02
+  transmission_delay_steps: 1
+world:
+  width: 1000.0
+  height: 700.0
+  physics_hz: 60
+  threat_speed: 28.0
+body:
+  max_speed: 150.0
+  turn_rate: 3.5
+  drag: 2.5
+motor:
+  window_ms: 50
+  gain: 1.8
+logging:
+  sample_every_ms: 10
