@@ -1,6 +1,17 @@
-# FlyBrain
+# FlyBrain (FlyAI) — Drosophila Connectome Simulation
 
-Built with codex
+> ⚡ **Architected, modeled, and accelerated using OpenAI Codex**
+
+A computational model of a virtual *Drosophila melanogaster*, with neural network connectivity structured from the official aggregated **MaleCNS v1.0** connectome. 
+
+### 🧠 Core Architecture
+* **Connectome Integration**: Implements neural wiring inspired by the MaleCNS v1.0 dataset.
+* **Sensory-Motor Pipeline**: Strict sensory encoding invariants (`looming → sensory encoder → descending/motor circuits`).
+* **Neuro-Behavioral Logic**: Biological reaction modeling without hardcoded motion shortcuts.
+* **Modern Tooling**: Zero-config execution supported via `uv`.
+
+---
+
 
 Вычислительная модель виртуальной дрозофилы, структура связей которой может быть построена из официального агрегированного коннектома **MaleCNS v1.0**. Это не «точная копия мозга»: электрические параметры, рецепторы и сенсорная трансдукция в текущем MVP упрощены.
 
